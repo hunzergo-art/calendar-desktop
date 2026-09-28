@@ -14,12 +14,11 @@
 
 ![主窗口：周视图、迷你月历与当日面板](docs/screenshots/main-window.png)
 
-**悬浮块与悬停面板** —— 悬浮块常驻角落，一眼看到今天；鼠标悬停即展开面板。
+**悬浮块与悬停面板** —— 悬浮块常驻屏幕右下角，一眼看到今天；鼠标悬停即在其左侧展开面板，两者底边对齐。
 
 <p>
-  <img src="docs/screenshots/floating-widget.png" width="230" alt="悬浮块：显示星期与日期">
-  &nbsp;&nbsp;
-  <img src="docs/screenshots/hover-panel.png" width="330" alt="悬停面板：今日任务、明日任务与长期计划">
+  <img src="docs/screenshots/hover-panel.png" width="400" alt="悬停面板：今日任务、明日任务与长期计划">
+  <img src="docs/screenshots/floating-widget.png" width="154" alt="悬浮块：显示星期与日期">
 </p>
 
 ---

@@ -14,12 +14,11 @@ Lives in the system tray. A draggable widget sits in the bottom-right corner so 
 
 ![Main window: week view with mini calendar and day panel](docs/screenshots/main-window.png)
 
-**Floating widget and hover panel** — the widget sits in the corner showing today at a glance; hovering it expands the panel.
+**Floating widget and hover panel** — the widget sits in the bottom-right corner showing today at a glance; hovering it expands the panel to its left, with the two bottom edges aligned.
 
 <p>
-  <img src="docs/screenshots/floating-widget.png" width="230" alt="Floating widget showing the weekday and date">
-  &nbsp;&nbsp;
-  <img src="docs/screenshots/hover-panel.png" width="330" alt="Hover panel listing today's tasks, tomorrow's tasks and long-term plans">
+  <img src="docs/screenshots/hover-panel.png" width="400" alt="Hover panel listing today's tasks, tomorrow's tasks and long-term plans">
+  <img src="docs/screenshots/floating-widget.png" width="154" alt="Floating widget showing the weekday and date">
 </p>
 
 ---
