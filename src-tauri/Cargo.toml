@@ -1,0 +1,38 @@
+[package]
+name = "open-calendar"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.77"
+description = "个人自用日历日程软件（PC 端）"
+
+[lib]
+# Tauri v2 的标准布局：真正的逻辑在 lib 里，main.rs 只是薄壳，
+# 这样将来加集成测试可以直接用这个 crate。
+name = "open_calendar_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = ["tray-icon"] }
+tauri-plugin-dialog = "2"
+tauri-plugin-notification = "2"
+tauri-plugin-autostart = "2"
+tauri-plugin-single-instance = "2"
+
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+# 时间处理：事件存 NaiveDateTime（本地时间），时间戳存 DateTime<FixedOffset>（+08:00）
+chrono = { version = "0.4", features = ["serde"] }
+
+uuid = { version = "1", features = ["v4", "serde"] }
+thiserror = "2"
+
+[profile.release]
+# 体积优先：个人自用软件，不追编译速度。
+codegen-units = 1
+lto = true
+opt-level = "s"
+strip = true

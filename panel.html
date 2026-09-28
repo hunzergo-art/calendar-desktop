@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>日历日程 · 小面板</title>
+    <style>
+      /* 小面板窗口是无边框透明的，页面本身必须透明，圆角由内容层自己画。 */
+      html,
+      body,
+      #root {
+        background: transparent;
+        margin: 0;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/panel-window.tsx"></script>
+  </body>
+</html>

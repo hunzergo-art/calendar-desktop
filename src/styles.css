@@ -1,0 +1,20 @@
+/* Tailwind v4：CSS-first 配置，不再需要 tailwind.config.js。
+   主题变量直接写在这里的 @theme 块里。 */
+@import "tailwindcss";
+
+/* 深色模式由 JS 在 <html> 上切 .dark 类控制，而不是跟随系统。 */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* 标签色板：存档里 tag.color 存的就是这些值，改动需同步改后端默认标签。 */
+  --color-tag-blue: #3b82f6;
+  --color-tag-green: #22c55e;
+  --color-tag-amber: #f59e0b;
+  --color-tag-rose: #f43f5e;
+  --color-tag-violet: #8b5cf6;
+
+  /* 优先级 */
+  --color-prio-high: #ef4444;
+  --color-prio-normal: #6b7280;
+  --color-prio-low: #94a3b8;
+}

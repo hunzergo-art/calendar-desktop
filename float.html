@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>日历日程 · 悬浮块</title>
+    <style>
+      /* 悬浮块窗口同样无边框透明，梯形外形由 CSS clip-path 画。 */
+      html,
+      body,
+      #root {
+        background: transparent;
+        margin: 0;
+        overflow: hidden;
+        /* 整块可拖动，见 float-window.tsx 的 startDragging */
+        user-select: none;
+        cursor: default;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/float-window.tsx"></script>
+  </body>
+</html>
